@@ -1,18 +1,21 @@
-# Welcome to Cyrpto-Calculator! 
 
-We are currently in version 0.0.1 EARLY Alpha. Our product will enable you to check the prices of your favorite cyrpto-currency. In addition, you will be able to do simple analysis that allows you to see what the worth of your bitcoin would be if it increased.
+#**Welcome to Cyrpto-Calculator**
 
-As we mentioned, we are in Early Alpha. Therefore, if you use this program please be prepared to find bugs, errors, and simple annoyances. We are working hard to fix any problems we have. If you find yourself wanting to contribute to this project we very much could use your help. 
-
-# How to Download
-
-Downloading is very simple. The first step you will need to do is install Python 2.7. The second step is to download the project files to your system(Git recommended as we are changing the code often) and run 'main.py'
-
-# How to contribute
-
-It does not matter if you are an experienced or unexperienced programmer. We feel that this project could be great for you! Currently, we have a lot of bugs and work to do to make this project great. The first step to contributing is to check out the issues and projects tabs on Github. The second option is optiomal, but we would appreciate if you chat us up on Discord. Finally, the third step is to work on your issue and submit a pull-request. The core developers will test your code and if it works than we will make it official. Please ensure that your code is Python 2.7 and PEP-8 compliant or your code will be automatically rejected by Travis-cl
+ We are a simple calculator for cyrpto-currencies such as Bitcoin, Litecoin, and Etherium. Our command line tool allows you to get the price for your currencies fast and within your compiler. In addition, we allow you to do simple analysis so you can make wise decision in choosing to purchase certain cyrpto-currencies.
 
 
-## We appreciate you taking the time to view this project. Mahalo and have a fantastic day/night/evening
+**NOTE: We are currently  under EARLY ALPHA release with many bugs being fixed **
 
-P.s We could use writers too for documentation.
+
+##**How to download**
+
+ 1. Download the code to your computer.
+ 2. Ensure that Python 2.7 is installed
+ 3. Run Main.py to start the program
+*GIT Source control is highly recommended. Please pull everyday as changes are imminent and unscheduled*
+
+##**Contribute**
+Contributors are welcomed! If you have skills in Python than we could really appreciate your help. Please check out our issues and projects page. If you find something you would like to work on feel free to work on it and submit a pull request. In addition, we highly encourage that talk to us on Discord. We are here to help you. Together, we can make this project great.
+
+
+### Thank you for visiting our project

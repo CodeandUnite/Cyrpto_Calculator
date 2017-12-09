@@ -1,0 +1,16 @@
+
+def Welcome_Screen():
+    print "Welcome to Cyrpto-Calculator Version 0.1-Alpha"
+    print "This simple tool allows you to check the prices for popular cyrpto currencies."
+    print "In addition, we can do simple analysis to predict prices for you"
+    Home_Screen()
+
+def Home_Screen():
+    print "Welcome to the home screen"
+    print "" 
+    print "Commands: -h to get help or how report bugs, -c to learn how to contribute, and - l to get license agreement"
+    print ""
+    print "To begin, please enter the name of the cyrpto-currency you would like to calculate"
+    	   
+
+Welcome_Screen()

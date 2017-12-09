@@ -1,4 +1,4 @@
-# Initial version created December 1st, 2017 by Austin 
+# Initial version created December 1st, 2017 by Austin
 from cyrptos import *
 import time
 result = "void"
@@ -25,36 +25,41 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.'''
+
 space = "\n"
-logo = """   _____                 _         _____      _            _       _             
-  / ____|               | |       / ____|    | |          | |     | |            
- | |    _   _ _ __ _ __ | |_ ___ | |     __ _| | ___ _   _| | __ _| |_ ___  _ __ 
+logo = """   _____                 _         _____      _            _       _
+  / ____|               | |       / ____|    | |          | |     | |
+ | |    _   _ _ __ _ __ | |_ ___ | |     __ _| | ___ _   _| | __ _| |_ ___  _ __
  | |   | | | | '__| '_ \| __/ _ \| |    / _` | |/ __| | | | |/ _` | __/ _ \| '__|
- | |___| |_| | |  | |_) | || (_) | |___| (_| | | (__| |_| | | (_| | || (_) | |   
-  \_____\__, |_|  | .__/ \__\___/ \_____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|   
-         __/ |    | |                                                            
-        |___/     |_|            """
+ | |___| |_| | |  | |_) | || (_) | |___| (_| | | (__| |_| | | (_| | || (_) | |
+  \_____\__, |_|  | .__/ \__\___/ \_____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|
+         __/ |    | |
+        |___/     |_|
+
+                   """
 def Welcome_Screen():
     print logo
     print "Welcome to Cyrpto-Calculator!"
     space
     print "What we do: We are a simple tool that allows you to check the prices for cyrpto currencies and do simple analysis to predict prices for you"
-    
+
     Home_Screen()
+
 
 def Home_Screen():
     space
     print "Quick Commands: -h for help and/or to report a bug"
     print "Currently avalible currencies are Bitcoin, Etherium, and Litecoin. Please enter any of the three mentioned below"
-    
+
     print space
-    
+
     Search_Query()
+
 
 def Help():
     print """Hello! Thank you for visiting our Help function.
              This program is still in ALPHA development therefore we
-             still have bugs. Developers please check our issues page 
+             still have bugs. Developers please check our issues page
              on Github to submit bugs and work on bugs. Mahalo """
     Yes_or_No = raw_input("Would you like to return?")
     if Yes_Or_No == "Yes":
@@ -68,18 +73,19 @@ def Help():
 def Search_Query():
     search = raw_input()
     print space
-    # Now send to the information to the query search
     if search == "-h":
        Help()
-    else:	        
+    else:
        coinsearch.Searchdatabase(search)
+
 
 def Pending_Results(coin):
     print space
     Cyrpto_Calculator(coin)
 
+
 def Coin_Fail_Event():
-   print "Would you like to enter a new coin?" 
+   print "Would you like to enter a new coin?"
    Yes_Or_No = raw_input()
    if Yes_Or_No == "Yes" or Yes_Or_No == "Y":
       print "Starting Over"
@@ -89,9 +95,11 @@ def Coin_Fail_Event():
    else:
       print "Can not understand that. Please enter 'Yes' or 'No' exactly as that"
       Coin_Fail_Event()
+
+
 def Display_Logo(which_coin):
    if which_coin == "bitcoin":
-      return """     ,.=ctE55ttt553tzs.,
+      return """ ,.=ctE55ttt553tzs.,
              ,,c5;z==!!::::  .::7:==it3>.,
           ,xC;z!::::::    ::::::::::::!=c33x,
         ,czz!:::::  ::;;..===:..:::   ::::!ct3.
@@ -118,8 +126,9 @@ E:.    (::::::::::::L    .......       \:::::::!  ::|i3
              "=zz3==...         ...=t3z13P^
                  `*=zjzczIIII3zzztE3>*^` """
 
+
+
 def Cyrpto_Calculator(current_coin):
-    #Replace bitcoin with each different coin
     print  Display_Logo(current_coin)
     print "Welcome to the calculator for the "+current_coin+" currency!"
     print space
@@ -128,22 +137,23 @@ def Cyrpto_Calculator(current_coin):
     print "Enter those whenever you wish"
     collect_data = raw_input()
     if collect_data == "-c":
-       price_check(current_coin)
+       print price_check(current_coin)
+       # Should probably change the name
+       Coin_Fail_Event()
+
     elif collect_data == "-p":
-       amount_compare(current_coin)
+       print amount_compare(current_coin)
+       Coin_Fail_Event()
 
 def price_check(specific_coin):
-    #Testing Purplsssoses
-    coin_apis.Coin_PriceCheck(specific_coin)
-    Cyrpto_Calculator(specific_coin)
+    return coin_apis.Coin_PriceCheck(specific_coin)
+
 
 def amount_compare(specific_coin):
     print "Do you want to see how much your bitcoin would be worth if it increased by a certain amount? Just enter that number directly below and we will do the rest"
     print "NOTE: Enter a dollar amount. Example if a bitcoin cost 1 dollar say you imagine it incrasing to 1000, enter that"
     collect_coin_data = raw_input()
     print calculator.Get_Recent_Price(specific_coin, collect_coin_data)
-#Causing potential bug in the code 
-#Welcome_Screen()
+
 if __name__ == "__main__":
    Welcome_Screen()
-

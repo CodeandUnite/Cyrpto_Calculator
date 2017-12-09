@@ -1,5 +1,6 @@
 
 # **Welcome to Cyrpto-Calculator**
+[![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
 
  We are a simple calculator for cyrpto-currencies such as Bitcoin, Litecoin, and Etherium. Our command line tool allows you to get the price for your currencies fast and within your compiler. In addition, we allow you to do simple analysis so you can make wise decision in choosing to purchase certain cyrpto-currencies.
 

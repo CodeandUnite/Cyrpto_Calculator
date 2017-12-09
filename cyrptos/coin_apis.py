@@ -26,5 +26,7 @@ def Coin_PriceCheck(specific_coin):
       r = requests.get(bitcoin_url, headers = {'Accept':'application/json'})
       Last_BitcoinPrice = r.json()['last']
       print  "The current price of Bitcoin withihn the last 24 hours is " + Last_BitcoinPrice
-
+   
+      
 #Bitcoin_PriceCheck()
+

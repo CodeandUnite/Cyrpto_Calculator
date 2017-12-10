@@ -17,7 +17,7 @@
 
 ## **Contribute**
 Discord Developer chat room: https://discord.gg/mJN9Md
-Contributors are welcomed! If you have skills in Python than we could really appreciate your help. Please check out our issues and projects page. If you find something you would like to work on feel free to work on it and submit a pull request. In addition, we highly encourage that talk to us on Discord. We are here to help you. Together, we can make this project great.
+We could use great developers like you! If you found an error in our program, or you simply want to make an enhancement you are very welcome to do so! The first step you will want to do is repo this into your own Github account. Then you will need to create a Branch that will be submitted for review by us. The only requirement is that your code is PEP-8 compliant.(Btw, we could use some assistance making existing code PEP-8 compliant. Starting with Alpha 2 PEP-8 will be a requirement. Please feel free to chat with us on Discord if you have any questions or need help. 
 
 
 ### Thank you for visiting our project

@@ -69,14 +69,25 @@ def Help():
     else:
        Help()
 
+def search_error(search_error):
+    print "Sorry, the coin that you entered" + search_error + "Could not be found. Please verify your input"
+    print "Please enter your input again below"
+    Search_Query()
 
 def Search_Query():
     search = raw_input()
     print space
     if search == "-h":
        Help()
-    else:
+    elif search == "bitcoin" or search == "Bitcoin":
        coinsearch.Searchdatabase(search)
+    elif search == "Etherium" or search == "etherium":
+       coinsearch.Searchdatabase(search)
+    elif search == "Litecoin" or search == "litecoin":
+       coinsearch.Searchdatabase(search)
+    else:
+       search_error(search)
+       
 
 
 def Pending_Results(coin):

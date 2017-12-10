@@ -20,11 +20,12 @@ def Search_Success(Userdefined_Coin):
    main.Pending_Results(Userdefined_Coin)
 
 def Cyrptodatabase(Input_Checker):
+   coin_proper = Input_Checker.lower()
    approved_cyrptos = ["bitcoin","etherium","litecoin"]
    counter = len(approved_cyrptos)
-   if Input_Checker in approved_cyrptos:
-      Search_Success(Input_Checker)
+   if coin_proper in approved_cyrptos:
+      Search_Success(coin_proper)
    else:
-      Search_Failure(Input_Checker)
+      Search_Failure(coin_proper)
         
 

@@ -39,7 +39,7 @@ logo = """   _____                 _         _____      _            _       _
                    """
 def Welcome_Screen():
     print logo
-    print "Welcome to Cyrpto-Calculator!"
+    print "Welcome to the Cyrpto-Calculator!"
     space
     print "What we do: We are a simple tool that allows you to check the prices for cyrpto currencies and do simple analysis to predict prices for you"
 

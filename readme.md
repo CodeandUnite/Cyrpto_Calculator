@@ -19,5 +19,7 @@
 Discord Developer chat room: https://discord.gg/mJN9Md
 We could use great developers like you! If you found an error in our program, or you simply want to make an enhancement you are very welcome to do so! The first step you will want to do is repo this into your own Github account. Then you will need to create a Branch that will be submitted for review by us. The only requirement is that your code is PEP-8 compliant.(Btw, we could use some assistance making existing code PEP-8 compliant. Starting with Alpha 2 PEP-8 will be a requirement. Please feel free to chat with us on Discord if you have any questions or need help. 
 
+We recommend installing the ATOM IDE and installing Autopep8 this will make it easier to format your code as the rules are many.
+
 
 ### Thank you for visiting our project

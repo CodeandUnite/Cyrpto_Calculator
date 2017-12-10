@@ -37,6 +37,8 @@ logo = """   _____                 _         _____      _            _       _
         |___/     |_|
 
                    """
+
+
 def Welcome_Screen():
     print logo
     print "Welcome to the Cyrpto-Calculator!"
@@ -63,31 +65,32 @@ def Help():
              on Github to submit bugs and work on bugs. Mahalo """
     Yes_or_No = raw_input("Would you like to return?")
     if Yes_Or_No == "Yes":
-       Welcome_Screen()
+        Welcome_Screen()
     elif Yes_Or_No == "No":
-       Help()
+        Help()
     else:
-       Help()
+        Help()
+
 
 def search_error(search_error):
     print "Sorry, the coin that you entered" + search_error + "Could not be found. Please verify your input"
     print "Please enter your input again below"
     Search_Query()
 
+
 def Search_Query():
     search = raw_input()
     print space
     if search == "-h":
-       Help()
+        Help()
     elif search == "bitcoin" or search == "Bitcoin":
-       coinsearch.Searchdatabase(search)
+        coinsearch.Searchdatabase(search)
     elif search == "Etherium" or search == "etherium":
-       coinsearch.Searchdatabase(search)
+        coinsearch.Searchdatabase(search)
     elif search == "Litecoin" or search == "litecoin":
-       coinsearch.Searchdatabase(search)
+        coinsearch.Searchdatabase(search)
     else:
-       search_error(search)
-       
+        search_error(search)
 
 
 def Pending_Results(coin):
@@ -96,21 +99,21 @@ def Pending_Results(coin):
 
 
 def Coin_Fail_Event():
-   print "Would you like to enter a new coin?"
-   Yes_Or_No = raw_input()
-   if Yes_Or_No == "Yes" or Yes_Or_No == "Y":
-      print "Starting Over"
-      Welcome_Screen()
-   if Yes_Or_No == "No" or Yes_Or_No == "N":
-      print "Thank you for using the product. Terminating the program"
-   else:
-      print "Can not understand that. Please enter 'Yes' or 'No' exactly as that"
-      Coin_Fail_Event()
+    print "Would you like to enter a new coin?"
+    Yes_Or_No = raw_input()
+    if Yes_Or_No == "Yes" or Yes_Or_No == "Y":
+        print "Starting Over"
+        Welcome_Screen()
+    if Yes_Or_No == "No" or Yes_Or_No == "N":
+        print "Thank you for using the product. Terminating the program"
+    else:
+        print "Can not understand that. Please enter 'Yes' or 'No' exactly as that"
+        Coin_Fail_Event()
 
 
 def Display_Logo(which_coin):
-   if which_coin == "bitcoin":
-      return """ ,.=ctE55ttt553tzs.,
+    if which_coin == "bitcoin":
+        return """ ,.=ctE55ttt553tzs.,
              ,,c5;z==!!::::  .::7:==it3>.,
           ,xC;z!::::::    ::::::::::::!=c33x,
         ,czz!:::::  ::;;..===:..:::   ::::!ct3.
@@ -138,23 +141,23 @@ E:.    (::::::::::::L    .......       \:::::::!  ::|i3
                  `*=zjzczIIII3zzztE3>*^` """
 
 
-
 def Cyrpto_Calculator(current_coin):
-    print  Display_Logo(current_coin)
-    print "Welcome to the calculator for the "+current_coin+" currency!"
+    print Display_Logo(current_coin)
+    print "Welcome to the calculator for the " + current_coin + " currency!"
     print space
     print "The features that we offer are the following: Check the current price(-c), See what your price would be if it incresed by x amount(-p)"
     print space
     print "Enter those whenever you wish"
     collect_data = raw_input()
     if collect_data == "-c":
-       print price_check(current_coin)
-       # Should probably change the name
-       Coin_Fail_Event()
+        print price_check(current_coin)
+        # Should probably change the name
+        Coin_Fail_Event()
 
     elif collect_data == "-p":
-       print amount_compare(current_coin)
-       Coin_Fail_Event()
+        print amount_compare(current_coin)
+        Coin_Fail_Event()
+
 
 def price_check(specific_coin):
     return coin_apis.Coin_PriceCheck(specific_coin)
@@ -166,5 +169,6 @@ def amount_compare(specific_coin):
     collect_coin_data = raw_input()
     print calculator.Get_Recent_Price(specific_coin, collect_coin_data)
 
+
 if __name__ == "__main__":
-   Welcome_Screen()
+    Welcome_Screen()

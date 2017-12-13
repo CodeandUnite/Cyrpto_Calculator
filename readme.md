@@ -1,4 +1,5 @@
 
+![alt text](https://raw.githubusercontent.com/CodeandUnite/Cyrpto_Calculator/V01-Alpha-2/logo.png)
 # **Welcome to Cyrpto-Calculator**
 [![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
 

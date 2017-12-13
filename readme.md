@@ -8,9 +8,11 @@
   2. Code refactored
   3. Code is stable
 
- We are a simple calculator for cyrpto-currencies such as Bitcoin, Litecoin, and Etherium. Our command line tool allows you to get the price for your currencies fast and within your compiler. In addition, we allow you to do simple analysis so you can make wise decision in choosing to purchase certain cyrpto-currencies.
 
 
+## About
+
+Cyrpto_Calculator is an analysis program that is intended to help you make smart investments in cyrptocurrencies. Currently, our program supports Bitcoin, Litecoin, and Etherium. This command tool can get you the prices for your curriences, and it can also show you how much the coin would be worth if it increased. This tool is still in ALPHA development with features still being added. Suggestions on what to add are helpful and recommended. 
 
 ## **How to download**
 
@@ -20,7 +22,15 @@
 *GIT Source control is highly recommended. Please pull everyday as changes are imminent and unscheduled*
 
 
-
 ## **Contribute**
 Discord Developer chat room: https://discord.gg/mJN9Md
-We could use great developers like you! If you found an error in our program, or you simply want to make an enhancement you are very welcome to do so! The first step you will want to do is repo this into your own Github account. Then you will need to create a Branch that will be submitted for review by us. The only requirement is that your code is PEP-8 compliant.(Btw, we could use some assistance making existing code PEP-8 compliant. Starting with Alpha 2 PEP-8 will be a requirement. Please feel free to chat with us on Discord if you have any questions or need help.
+
+Thank you for having an interest in developing for Cyrpto_Calculator. We are currently in ALPHA development stage and have a few more features to add before we go to BETA stage. In addition, we can offer mentorship to new developers. A first step that you might consider is checking out our issues tab and our projects tab. If you find  an issue that you would like to work on. Please work on it. All we ask is that you follow the protocals below
+
+Guideline
+ 1. Do *not* directly fix a bug. Please create a branch and then submit your fix through a pull request
+ 2. Test your code. Even if your feature works, it could break something else in the codebase. So perfom a simple unit test       before submitting
+ 3. Make sure your code is PEP-8 compliant. We recommend the ATOM IDE and a pep8 auto fixer.
+ 4. Please do not plagerize code. It is against our code of honor and can give our project a bad reputation
+ 
+ ### **beginner guide coming soon**

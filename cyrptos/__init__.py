@@ -1,1 +1,1 @@
-__all__ = ['bitcoin','coinsearch','coin_apis','calculator']
+__all__ = ['bitcoin', 'coinsearch', 'coin_apis', 'calculator']

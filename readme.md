@@ -25,7 +25,12 @@ Cyrpto_Calculator is an analysis program that is intended to help you make smart
 ## **Contribute**
 Discord Developer chat room: https://discord.gg/mJN9Md
 
+<<<<<<< V01-Alpha-2
 Thank you for having an interest in developing for Cyrpto_Calculator. We are currently in ALPHA development stage and have a few more features to add before we go to BETA stage. In addition, we can offer mentorship to new developers. A first step that you might consider is checking out our issues tab and our projects tab. If you find  an issue that you would like to work on. Please work on it. All we ask is that you follow the protocals below
+=======
+We recommend installing the ATOM IDE and installing Autopep8 this will make it easier to format your code as the rules are many.
+
+>>>>>>> master
 
 Guideline
  1. Do *not* directly fix a bug. Please create a branch and then submit your fix through a pull request

@@ -1,24 +1,39 @@
 # THis file will work as a calculator for the program
 import requests
 import time
-test_coin = "bitcoin"
-
-# Get_Recent_Price(test_coin)
 
 
 def Get_Recent_Price(specific_coin, user_math):
     if specific_coin == "bitcoin":
-        bitcoin_url = 'https://www.bitstamp.net/api/ticker'
-        r = requests.get(bitcoin_url, headers={'Accept': 'application/json'})
-        Last_BitcoinPrice = r.json()['last']
-        print "Calculating..."
-        print time.sleep(2)
-        print "If the price was to raise by your estimation it would be approximately"
-        print Calculate_Future(Last_BitcoinPrice, user_math)
-       # print "If " + specific_coin +" s price were to raise by "+user_math+" it would be approximately " + Calculate_Future(Last_BitcoinPrice,user_math)
+        coin = "btc"
+        base_currency = "usd"
+        url = "https://api.cryptonator.com/api/ticker/{}-{}".format(
+            coin, base_currency)
+        request = requests.get(url)
+        data = request.json()
+        Latest_Bitcoinprice = float(data['ticker']['price'])
+        # Send to the real calculator to calculate the price
+        return Calculate_Future(Latest_Bitcoinprice, user_math)
+    elif specific_coin == "etherium":
+        coin = "eth"
+        base_currency = "usd"
+        url = "https://api.cryptonator.com/api/ticker/{}-{}".format(
+            coin, base_currency)
+        request = requests.get(url)
+        data = request.json()
+        Latest_EtheriumPrice = float(data['ticker']['price'])
+        return Calculate_Future(Latest_EtheriumPrice, user_math)
+    elif specific_coin == "litecoin":
+        coin = "ltc"
+        base_currency = "usd"
+        url = "https://api.cryptonator.com/api/ticker/{}-{}".format(
+            coin, base_currency)
+        request = requests.get(url)
+        data = request.json()
+        Latest_LitecoinPrice = float(data['ticker']['price'])
+        return Calculate_Future(Latest_LitecoinPrice, user_math)
 
 
-def Calculate_Future(Last_BitcoinPrice, user_math):
-    recent_price = float(Last_BitcoinPrice)
-    new_price = recent_price * 10
+def Calculate_Future(Last_Price, user_math):
+    new_price = Last_Price * user_math
     return new_price

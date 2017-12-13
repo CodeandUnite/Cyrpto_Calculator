@@ -166,8 +166,8 @@ def price_check(specific_coin):
 def amount_compare(specific_coin):
     print "Do you want to see how much your bitcoin would be worth if it increased by a certain amount? Just enter that number directly below and we will do the rest"
     print "NOTE: Enter a dollar amount. Example if a bitcoin cost 1 dollar say you imagine it incrasing to 1000, enter that"
-    collect_coin_data = raw_input()
-    print calculator.Get_Recent_Price(specific_coin, collect_coin_data)
+    collect_coin_data = int(raw_input())
+    return calculator.Get_Recent_Price(specific_coin, collect_coin_data)
 
 
 if __name__ == "__main__":

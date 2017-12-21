@@ -3,10 +3,11 @@
 # **Welcome to Cyrpto-Calculator**
 [![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
 
-  ***V0.1-Alpha-2 Updates***
-  1. Added Etherium and Litecoin functionality.
-  2. Code refactored
-  3. Code is stable
+# INSTALLATION 
+During Alpha, the only option to download this program is through git. This allows you to update the code-base as we are still in active development. 
+
+To install for a Unix system or an Windows systems, please open up your terminal or command prompt and enter the following:
+git origin add
 
 
 

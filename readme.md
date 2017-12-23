@@ -15,9 +15,9 @@ Requirements
 
 ### Windows (Tested on Windows 10) 
 To run on windows, All you have to do is the following below
-```open command prompt
-   cd 'your directory
-   python main.py```
+`open command prompt`
+`cd 'your directory`
+`python main.py`
 
 ### Unix (Tested on Ubuntu)
 To run on windows, All you have to do is the following below

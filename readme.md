@@ -15,15 +15,15 @@ Requirements
 
 ### Windows (Tested on Windows 10) 
 To run on windows, All you have to do is the following below
-'''open command prompt
+```open command prompt
    cd 'your directory
-   python main.py'''
+   python main.py```
 
 ### Unix (Tested on Ubuntu)
 To run on windows, All you have to do is the following below
-'open terminal'
-'cd 'your directory'
-'python main.py'
+`open terminal`
+`cd 'your directory`
+`python main.py`
 
 ### Apple 
 Currently not supported. 

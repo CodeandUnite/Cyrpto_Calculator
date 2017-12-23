@@ -37,81 +37,53 @@ logo = """   _____                 _         _____      _            _       _
         |___/     |_|
 
                    """
+				   
+def avaliable_currencies():
+   standard_space = "             "
+   print "Bitcoin" + standard_space + "When using calculator, please type Bitcoin or bitcoin"
+   print "Etherium" + standard_space + "When using calculator, please type Etherium or etherium"
+   print "Litecoin" + standard_space + "When using calculator, please type Litecoin or litecoin"
+   # Allow the user to now enter search query once more
+   Search_Query()
+   
 
+def Welcome_Module():
+   print logo
+   print "Welcome to the main menu for the cyrptocurrency calculator"
+   print "COMMANDS: |Help -h | List of available cyrpto currencies -l | 'selected cyrpto_currency' to initialize calculator | "
+   print "Proceed to type the selected command below" 
+   Search_Query()
 
-def Welcome_Screen():
-    print logo
-    print "Welcome to the Cyrpto-Calculator!"
-    space
-    print "What we do: We are a simple tool that allows you to check the prices for cyrpto currencies and do simple analysis to predict prices for you"
-
-    Home_Screen()
-
-
-def Home_Screen():
-    space
-    print "Quick Commands: -h for help and/or to report a bug"
-    print "Currently avalible currencies are Bitcoin, Etherium, and Litecoin. Please enter any of the three mentioned below"
-
-    print space
-
-    Search_Query()
-
-
-def Help():
+def Help_module():
     print """Hello! Thank you for visiting our Help function.
              This program is still in ALPHA development therefore we
              still have bugs. Developers please check our issues page
              on Github to submit bugs and work on bugs. Mahalo """
     Yes_or_No = raw_input("Would you like to return?")
     if Yes_Or_No == "Yes":
-        Welcome_Screen()
+        Welcome_Module()
     elif Yes_Or_No == "No":
-        Help()
+        Help_module()
     else:
-        Help()
+        Help_module()
 
-
-def search_error(search_error):
-    print "Sorry, the coin that you entered" + search_error + "Could not be found. Please verify your input"
-    print "Please enter your input again below"
-    Search_Query()
-
-
-def Search_Query():
-    search = raw_input()
+def Calculator_module(current_coin):
+    print Currency_logos(current_coin)
+    print "Welcome to the calculator for the " + current_coin + " currency!"
     print space
-    if search == "-h":
-        Help()
-    elif search == "bitcoin" or search == "Bitcoin":
-        coinsearch.Searchdatabase(search)
-    elif search == "Etherium" or search == "etherium":
-        coinsearch.Searchdatabase(search)
-    elif search == "Litecoin" or search == "litecoin":
-        coinsearch.Searchdatabase(search)
-    else:
-        search_error(search)
-
-
-def Pending_Results(coin):
+    print "The features that we offer are the following: Check the current price(-c), See what your price would be if it incresed by x amount(-p)"
     print space
-    Cyrpto_Calculator(coin)
-
-
-def Coin_Fail_Event():
-    print "Would you like to enter a new coin?"
-    Yes_Or_No = raw_input()
-    if Yes_Or_No == "Yes" or Yes_Or_No == "Y":
-        print "Starting Over"
-        Welcome_Screen()
-    if Yes_Or_No == "No" or Yes_Or_No == "N":
-        print "Thank you for using the product. Terminating the program"
-    else:
-        print "Can not understand that. Please enter 'Yes' or 'No' exactly as that"
+    print "Enter those whenever you wish"
+    collect_data = raw_input()
+    if collect_data == "-c":
+        print price_check(current_coin)
+        # Should probably change the name
+        Coin_Fail_Event()
+    elif collect_data == "-p":
+        print amount_compare(current_coin)
         Coin_Fail_Event()
 
-
-def Display_Logo(which_coin):
+def Currency_logos(which_coin):
     if which_coin == "bitcoin":
         return """ ,.=ctE55ttt553tzs.,
              ,,c5;z==!!::::  .::7:==it3>.,
@@ -140,22 +112,83 @@ E:.    (::::::::::::L    .......       \:::::::!  ::|i3
              "=zz3==...         ...=t3z13P^
                  `*=zjzczIIII3zzztE3>*^` """
 
+    if which_coin == "litecoin":
+       return """   
+       
 
-def Cyrpto_Calculator(current_coin):
-    print Display_Logo(current_coin)
-    print "Welcome to the calculator for the " + current_coin + " currency!"
-    print space
-    print "The features that we offer are the following: Check the current price(-c), See what your price would be if it incresed by x amount(-p)"
-    print space
-    print "Enter those whenever you wish"
-    collect_data = raw_input()
-    if collect_data == "-c":
-        print price_check(current_coin)
-        # Should probably change the name
-        Coin_Fail_Event()
+          ,--,                                                                        
+,---.'|                                                                        
+|   | :              ___                                                       
+:   : |     ,--,   ,--.'|_                                 ,--,                
+|   ' :   ,--.'|   |  | :,'                       ,---.  ,--.'|         ,---,  
+;   ; '   |  |,    :  : ' :                      '   ,'\ |  |,      ,-+-. /  | 
+'   | |__ `--'_  .;__,'  /     ,---.     ,---.  /   /   |`--'_     ,--.'|'   | 
+|   | :.'|,' ,'| |  |   |     /     \   /     \.   ; ,. :,' ,'|   |   |  ,"' | 
+'   :    ;'  | | :__,'| :    /    /  | /    / ''   | |: :'  | |   |   | /  | | 
+|   |  ./ |  | :   '  : |__ .    ' / |.    ' / '   | .; :|  | :   |   | |  | | 
+;   : ;   '  : |__ |  | '.'|'   ;   /|'   ; :__|   :    |'  : |__ |   | |  |/  
+|   ,/    |  | '.'|;  :    ;'   |  / |'   | '.'|\   \  / |  | '.'||   | |--'   
+'---'     ;  :    ;|  ,   / |   :    ||   :    : `----'  ;  :    ;|   |/       
+          |  ,   /  ---`-'   \   \  /  \   \  /          |  ,   / '---'        
+           ---`-'             `----'    `----'            ---`-'  
+       
 
-    elif collect_data == "-p":
-        print amount_compare(current_coin)
+
+       """
+
+    if which_coin == "etherium":
+      return """  
+      
+      ,---. _______ .-. .-.,---.  ,---.  ,-..-. .-.         
+ | .-'|__   __|| | | || .-'  | .-.\ |(|| | | ||\    /| 
+ | `-.  )| |   | `-' || `-.  | `-'/ (_)| | | ||(\  / | 
+ | .-' (_) |   | .-. || .-'  |   (  | || | | |(_)\/  | 
+ |  `--. | |   | | |)||  `--.| |\ \ | || `-')|| \  / | 
+ /( __.' `-'   /(  (_)/( __.'|_| \)\`-'`---(_)| |\/| | 
+(__)          (__)   (__)        (__)         '-'  '-' 
+
+      """
+	
+	
+	
+def Search_Query():
+   search = raw_input()
+   print space
+   if search == "-h":
+      Help_module()
+   elif search == "-l":
+	   avaliable_currencies()
+   elif search == "Bitcoin" or search == "bitcoin":
+      coinsearch.Searchdatabase(search)
+   elif search == "Etherium" or search == "etherium":
+      coinsearch.Searchdatabase(search)
+   elif search == "Litecoin" or search == "litecoin":
+      coinsearch.Searchdatabase(search)
+   else:
+      search_error(search)
+
+# This is determined  after the code is submitted from coinsearch.Searchdatabase()
+def search_error(search_error):
+    print "Sorry, the coin that you entered" + search_error + "Could not be found. Please verify your input"
+    print "Please enter your input again below"
+    Search_Query()
+	
+
+def Pending_Results(coin):
+    print space
+    Calculator_module(coin)
+
+
+def Coin_Fail_Event():
+    print "Would you like to enter a new coin?"
+    Yes_Or_No = raw_input()
+    if Yes_Or_No == "Yes" or Yes_Or_No == "Y":
+        print "Starting Over"
+        Welcome_Module()
+    if Yes_Or_No == "No" or Yes_Or_No == "N":
+        print "Thank you for using the product. Terminating the program"
+    else:
+        print "Can not understand that. Please enter 'Yes' or 'No' exactly as that"
         Coin_Fail_Event()
 
 
@@ -169,6 +202,5 @@ def amount_compare(specific_coin):
     collect_coin_data = int(raw_input())
     return calculator.Get_Recent_Price(specific_coin, collect_coin_data)
 
-
 if __name__ == "__main__":
-    Welcome_Screen()
+    Welcome_Module()

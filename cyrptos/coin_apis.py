@@ -5,18 +5,6 @@
 import requests
 import json
 
-#bitcoin_url = 'https://www.bitstamp.net/api/ticker'
-#r = requests.get(bitcoin_url, headers = {'Accept':'application/json'})
-# print r.json()['last']
-#Last_BitcoinPrice = r.json()['last']
-
-
-# def coin_selector(specific_coin):
-# All_Coins = ['bitcoin','etherium','litecoin']
-# counter = len(All_Coins)
-# for x in range(counter):
-#  if specifc_coin == All_Coins[x]:
-
 
 def Coin_PriceCheck(specific_coin):
 

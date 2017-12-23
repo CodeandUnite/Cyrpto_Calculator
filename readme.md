@@ -4,11 +4,26 @@
 [![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
 
 # INSTALLATION 
-Currently, the recommended way to download this program is as a git repository. Please follow the steps below for your specific operating system that we support
+Requirements
+1. git installed on your local computer
+2. python 2.7 
+
+### Getting the code on your system (Windows/Unix systems)
+ Remember to pull often as we are pushing code almost everyday during the alpha phase of development 
+'git remote add origin https://github.com/austinprog/Cyrpto_Calculator.git' 
+'git pull origin master(or your own created branch)'
 
 ### Windows (Tested on Windows 10) 
+To run on windows, All you have to do is the following below
+'open command prompt'
+' cd 'your directory'
+'python main.py'
 
 ### Unix (Tested on Ubuntu)
+To run on windows, All you have to do is the following below
+'open terminal'
+'cd 'your directory'
+'python main.py'
 
 ### Apple 
 Currently not supported. 
@@ -17,15 +32,7 @@ Currently not supported.
 
 Cyrpto_Calculator is an analysis program that is intended to help you make smart investments in cyrptocurrencies. Currently, our program supports Bitcoin, Litecoin, and Etherium. This command tool can get you the prices for your curriences, and it can also show you how much the coin would be worth if it increased. This tool is still in ALPHA development with features still being added. Suggestions on what to add are helpful and recommended. 
 
-## **How to download**
-
- 1. Download the code to your computer.
- 2. Ensure that Python 2.7 is installed
- 3. Run Main.py to start the program
-*GIT Source control is highly recommended. Please pull everyday as changes are imminent and unscheduled*
-
-
-## **Contribute**
+## **CONTRIBUTE**
 Discord Developer chat room: https://discord.gg/mJN9Md
 
 If you would like to contribute than we could definetly use your help. As of now, we are currently in the ALPHA development stage of this software product. Moreover, this means that we have quite a few features that need to be added before this software is released to the public. Below are just some the contributors that we are in need of:

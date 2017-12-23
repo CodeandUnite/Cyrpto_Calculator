@@ -43,7 +43,7 @@ If you would like to contribute than we could definetly use your help. As of now
 
 A good first step, regardless of developer skill level, is to check our issues tab on our project issues page. If you find an issue that interests you, we definetly encourage you to work on it. Please, if you ever need help, do not hesitate to contact us on Discord. One of our core developers will be glad to help you. For more experienced developers, we are currently in search of several core developers. These areas are 1. Testing and 2. GUI development. If you are interested, please contact Austin on Discord.
 
-### *Contribution guidelines
+### *Contribution guidelines*
 As a open source software product, it is our mission to make it safe, enjoyable, and functionable by our users. Therefore, we have a few guidelines that we require all contributors to abide by. 
 
 1. Write good legible code
@@ -53,8 +53,9 @@ As a open source software product, it is our mission to make it safe, enjoyable,
 
 We recommend using a linter to ensure your code is PEP8 compliant. In addition, please read up on https://docs.python.org/2/library/unittest.html if you are new to testing. We've been relaxed on testing for ALPHA. However, it is now a requirement. 
 
-### *Beginner contributions ideas
- *COMING SOON*
+### *Beginner contributions ideas*
+  If you new to programming, we might suggest that you consider helping us in adding new cyrpto_currencies.
+  To do this, you will need to reference our API cyrptonator at https://www.cryptonator.com/api. In addition, you will need to have       some experience with JSON. *More details coming soon*
 
 
 

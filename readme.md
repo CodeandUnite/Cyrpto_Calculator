@@ -4,14 +4,16 @@
 [![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
 
 # INSTALLATION 
-During Alpha, the only option to download this program is through git. This allows you to update the code-base as we are still in active development. 
+Currently, the recommended way to download this program is as a git repository. Please follow the steps below for your specific operating system that we support
 
-To install for a Unix system or an Windows systems, please open up your terminal or command prompt and enter the following:
-git origin add
+### Windows (Tested on Windows 10) 
 
+### Unix (Tested on Ubuntu)
 
+### Apple 
+Currently not supported. 
 
-## About
+## ABOUT
 
 Cyrpto_Calculator is an analysis program that is intended to help you make smart investments in cyrptocurrencies. Currently, our program supports Bitcoin, Litecoin, and Etherium. This command tool can get you the prices for your curriences, and it can also show you how much the coin would be worth if it increased. This tool is still in ALPHA development with features still being added. Suggestions on what to add are helpful and recommended. 
 

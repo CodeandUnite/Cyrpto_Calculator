@@ -3,14 +3,17 @@
 # **Welcome to Cyrpto-Calculator**
 [![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
 
-  ***V0.1-Alpha-2 Updates***
-  1. Added Etherium and Litecoin functionality.
-  2. Code refactored
-  3. Code is stable
+# INSTALLATION 
+Currently, the recommended way to download this program is as a git repository. Please follow the steps below for your specific operating system that we support
 
+### Windows (Tested on Windows 10) 
 
+### Unix (Tested on Ubuntu)
 
-## About
+### Apple 
+Currently not supported. 
+
+## ABOUT
 
 Cyrpto_Calculator is an analysis program that is intended to help you make smart investments in cyrptocurrencies. Currently, our program supports Bitcoin, Litecoin, and Etherium. This command tool can get you the prices for your curriences, and it can also show you how much the coin would be worth if it increased. This tool is still in ALPHA development with features still being added. Suggestions on what to add are helpful and recommended. 
 
@@ -25,17 +28,26 @@ Cyrpto_Calculator is an analysis program that is intended to help you make smart
 ## **Contribute**
 Discord Developer chat room: https://discord.gg/mJN9Md
 
-Thank you for having an interest in developing for Cyrpto_Calculator. We are currently in ALPHA development stage and have a few more features to add before we go to BETA stage. In addition, we can offer mentorship to new developers. A first step that you might consider is checking out our issues tab and our projects tab. If you find  an issue that you would like to work on. Please work on it. All we ask is that you follow the protocals below
+If you would like to contribute than we could definetly use your help. As of now, we are currently in the ALPHA development stage of this software product. Moreover, this means that we have quite a few features that need to be added before this software is released to the public. Below are just some the contributors that we are in need of:
+1. Documentation
+2. Code Testing
+3. Feature development
+4. Leadership oppurtunities
 
-We recommend installing the ATOM IDE and installing Autopep8 this will make it easier to format your code as the rules are many.
+A good first step, regardless of developer skill level, is to check our issues tab on our project issues page. If you find an issue that interests you, we definetly encourage you to work on it. Please, if you ever need help, do not hesitate to contact us on Discord. One of our core developers will be glad to help you. For more experienced developers, we are currently in search of several core developers. These areas are 1. Testing and 2. GUI development. If you are interested, please contact Austin on Discord.
 
-Guideline
- 1. Do *not* directly fix a bug. Please create a branch and then submit your fix through a pull request
- 2. Test your code. Even if your feature works, it could break something else in the codebase. So perfom a simple unit test       before submitting
- 3. Make sure your code is PEP-8 compliant. We recommend the ATOM IDE and a pep8 auto fixer.
- 4. Please do not plagerize code. It is against our code of honor and can give our project a bad reputation
- 
- ### **A good simple contribution**
- The core of this application is to have as many cyrpto-currencies as possible. Currently, we use the cyrptonator API to get  our prices. In addition, this API has many other currencies other than Litecoin, Bitcoin, and Etherium. If you want to add, for example, the Dogecoin currency, this API will allow you to do so. 
- 
+### *Contribution guidelines
+As a open source software product, it is our mission to make it safe, enjoyable, and functionable by our users. Therefore, we have a few guidelines that we require all contributors to abide by. 
+
+1. Write good legible code
+2. Follow the PEP8 style guide
+3. Accept that you may need to rewrite your code several times
+4. Test your code by making simple unit tests
+
+We recommend using a linter to ensure your code is PEP8 compliant. In addition, please read up on https://docs.python.org/2/library/unittest.html if you are new to testing. We've been relaxed on testing for ALPHA. However, it is now a requirement. 
+
+### *Beginner contributions ideas
+ *COMING SOON*
+
+
 

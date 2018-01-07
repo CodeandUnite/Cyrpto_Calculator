@@ -1,3 +1,4 @@
+# Version 0.1-Alpha Version 4 will be released very soon with  more stability and a better design framework. We advise that you wait till that release as the program will be completely remodeled and faster! This will be released by 11:59PM Monday, January 8th, 2018 HST;
 
 ![alt text](https://raw.githubusercontent.com/CodeandUnite/Cyrpto_Calculator/V01-Alpha-2/logo.png)
 # **Welcome to Cyrpto-Calculator**

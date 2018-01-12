@@ -1,5 +1,5 @@
-# Product Name
-> Short blurb about what your product does.
+# Welcome to Cypro Calculator!
+> This program allows you to find the cyrptocurrencies price through your command line. In addition to this, We allow you to do some analysis for bitcoin. These features are: See how much your currency would be worth if it lowered to a user defined amount, see how much it would be worth if it increased by a user defined percentage, and see how much it would be worth if it decreased by a user defined percentage. Currently we have three cyrpto-currencies that we can perform analysis on, but in the future we hope to add more. In fact, since this is open source, you can add your coin with just a little bit of python code! Check out our development guide to learn more. 
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]

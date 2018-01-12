@@ -25,7 +25,7 @@ edit autoexec.bat
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+This program can be used to find the price for your favorite cyprto_currency. If you hate having to search the internet for prices, than all you have to do is run this program from your command line and get the recent price in second. In addition, we have a calculator feature that allows you to see a user price.
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 

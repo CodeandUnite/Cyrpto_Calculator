@@ -74,7 +74,8 @@ def Launch_module():
     if "-p" in capture_input:
         Is_coin_in_database(default_null_string, default_boolean)
     else:
-        print "We do apologize, but the input you entered " + capture_input + "could not be recognized and/or is not a valid command. Rerouting you to the Launch_module"
+        print "We do apologize, but the input you entered " + capture_input + "could not be recognized and/or is not a valid command. Please re-enter your command"
+
         time.sleep(1)
         Launch_module()
 
@@ -88,15 +89,15 @@ def coin_selection_module(Load_Coin):
     print " Welcome to the menu for " + Load_Coin
     print """
      The default conversion currency is USD, Option to change is not available at this time
-     If you would like to check the price for your coin, please type -s
-     If you would like to calculate how much your coin could rise, type -f
+     If you would like to check the price for your coin, please type -check
+     If you would like to calculate how much your coin could rise, type -cal
     """
     capture_input = raw_input()
 
-    if "-s" in capture_input:
+    if "-check" in capture_input:
         coin_tuple_of_data = (Load_Coin, "usd")
         Retrive_Price_module(coin_tuple_of_data)
-    if "-f" in capture_input:
+    if "-cal" in capture_input:
         Calculator_module(Load_Coin)
 
 
@@ -126,17 +127,26 @@ def Calculator_module(Selected_Coin):
             Selected_Coin, obtain_command_var, obtain_numerical_command)
         # Fix later to beautify. Just need to verify that it works.
         print "If your coin increased it would be worth this amount", output
+        time.sleep(2)
+        Launch_module()
     elif obtain_command_var == "-inc":
         output = processor.Collect_Calculator_Data(
             Selected_Coin, obtain_command_var, obtain_numerical_command)
         print "If your coin were to increase by", obtain_numerical_command, "''%' it would be worth", output
+        time.sleep(2)
+        Launch_module()
     elif obtain_command_var == "-dec":
         output = processor.Collect_Calculator_Data(
             Selected_Coin, obtain_command_var, obtain_numerical_command)
 
         print "If your coin was to decrease by", obtain_numerical_command, "it would be worth approximately", output
+        time.sleep(2)
+        Launch_module()
+
     else:
-        print "Your input is garbage. "
+        print "Sorry, but your input of",obtain_command_var, "could not be recognized! If you believe this was an error please report this on our Github. Restarting module"
+        time.sleep(1)
+        Calculator_module(Selected_Coin)
 
 
 def handle_failure_event():

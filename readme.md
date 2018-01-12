@@ -1,8 +1,25 @@
-# Version 0.1-Alpha Version 4 will be released very soon with  more stability and a better design framework. We advise that you wait till that release as the program will be completely remodeled and faster! This will be released by 11:59PM Monday, January 8th, 2018 HST;
-
 ![alt text](https://raw.githubusercontent.com/CodeandUnite/Cyrpto_Calculator/V01-Alpha-2/logo.png)
 # **Welcome to Cyrpto-Calculator**
 [![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
+
+
+## Release History
+
+* V1-Alpha-4
+    * Completely refactored architecture of the code, and we converted it into a model-view-controller framework for ease of use, and better abilities to edit the code
+    * Added +/- percentage functionality to the calculator
+    * Redesigned the GUI
+    * Laid the groundworks for testing with the unittest module
+* V1-Alpha-3
+    * Added ASCII art for Etherium and Litecoin
+    * Improved documentation
+    * Officially made py.test our official test framework
+    * Improved home screen`
+* V1-Alpha-2
+    * Added Litecoin functionality
+    *Added  Etherium functionality
+
+
 
 # INSTALLATION 
 Requirements
@@ -57,6 +74,3 @@ We recommend using a linter to ensure your code is PEP8 compliant. In addition, 
 ### *Beginner contributions ideas*
   If you new to programming, we might suggest that you consider helping us in adding new cyrpto_currencies.
   To do this, you will need to reference our API cyrptonator at https://www.cryptonator.com/api. In addition, you will need to have       some experience with JSON. *More details coming soon*
-
-
-

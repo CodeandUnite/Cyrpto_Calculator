@@ -5,6 +5,7 @@
 
 ## Release History
 
+* Development has been suspended due to lack of interest. If you are interested in rebooting this project simply create your own fork of it and build it to how you want it. 
 * V1-Alpha-4
     * Completely refactored architecture of the code, and we converted it into a model-view-controller framework for ease of use, and better abilities to edit the code
     * Added +/- percentage functionality to the calculator

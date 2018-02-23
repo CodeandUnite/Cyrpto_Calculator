@@ -7,10 +7,12 @@
 ## Release History
 
 * V1-Alpha-5 
+   * ALPHA-5 still being actively worked on.
    * Refactored the code to allow different curriences and general ease of use. 
    * Added the ability to change fiat currency
    * Structured the layout of text so that is easier to read for the user
-   * Tested all functions of the code 
+   * Tested all functions of the code
+   
    
 * V1-Alpha-4
     * Completely refactored architecture of the code, and we converted it into a model-view-controller framework for ease of use, and better abilities to edit the code

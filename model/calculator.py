@@ -18,9 +18,9 @@ def calculate_inc_mode(dataTuple):
     from model import bitcoin
     cyrpto, fiat, percentage_increase, price = dataTuple
     cyrpto_price = float(price)
-    current_price = float(percentage_increase)
-    projectedIncrease = cyrpto_price * current_price
-    AddToTotal = current_price + projectedIncrease
+    percentage_to_increase = float(percentage_increase)
+    Calculated_Increase = cyrpto_price * percentage_to_increase
+    AddToTotal = cyrpto_price + Calculated_Increase
     return AddToTotal
 
 

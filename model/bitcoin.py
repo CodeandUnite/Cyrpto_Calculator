@@ -1,4 +1,3 @@
-# This contains all the information needed for someone who selects bitcoin
 import requests
 import json
 import sys
@@ -8,11 +7,13 @@ import view
 import controller
 
 
-def api_price_retrivel(coin, conversion_currency):
+def api_price_retrivel(dataTuple):
+    cyrpto, fiat = dataTuple
     coin = "btc"
-    base_currency = "usd"
+    #Will need to change base_currency to custom price
+    #base_currency = "usd"
     url = "https://api.cryptonator.com/api/ticker/{}-{}".format(
-        coin, base_currency)
+        cyrpto, fiat)
     request = requests.get(url)
     data = request.json()
     bitcoin_price = float(data['ticker']['price'])

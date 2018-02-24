@@ -1,50 +1,61 @@
-# Processor.py acts as the middleman between the view and the models.
-# Its key duties is retriveing the user data and asking the appropriate model for the data
-# It's secondary duty is to validate the data that the user submits and correct them before sending on the data
-import sys
-sys.path.append('../')
-#from model import bitcoin
-#from view import core
+'''
+The processor will essentially get the data from the view. It will then use
+this data to send to the designated model to get its data. Once this data is
+retrived it will send it back to the view
+'''
 
 
-def verify_cyrptos(user_coin, boolean_verifer):
-    #from view import core
-    current_coins = ['bitcoin', 'litecoin', 'etherium']
-    if user_coin in current_coins:
-        boolean_is_true = True
-        coin_approved = user_coin
-        # Sending back the values
-        return (coin_approved, boolean_is_true)
-    else:
-        return (user_coin, boolean_verifer)
+def handle_cyrpto_and_fiat_database_check(dataTuple):
+    '''As the name suggest this will check that the cyrpto currency along with the
+    user defined fiat currency will be checked that it is in the database.
+    If the fiat currency along with the cyrpto currency are in the database then
+     '''
+    usrdefinedCyrpto, userdefinedFiat = dataTuple
+
+    complete_list_of_cyrptos = ["btc","ltc","eth"]
+    complete_list_of_fiats = ["usd", "rur", "gbp"]
+    if usrdefinedCyrpto in complete_list_of_cyrptos:
+        if userdefinedFiat in complete_list_of_fiats:
+            AcceptedVaribles = True
+            return AcceptedVaribles
+    if usrdefinedCyrpto not in complete_list_of_cyrptos:
+        if userdefinedFiat not in complete_list_of_fiats:
+            AcceptedVaribles = False
+            return AcceptedVaribles
 
 
-def Start_Price_Retrivel(required_data_tuple):
-    from model import bitcoin, etherium, litecoin
-    current_coins = ["bitcoin", "litecoin", "etherium"]
-    coin_id, currency_value = required_data_tuple
-    if coin_id == "bitcoin":
-        return bitcoin.api_price_retrivel(coin_id, currency_value)
-    elif coin_id == "litecoin":
-        return litecoin.api_price_retrivel(coin_id, currency_value)
-    elif coin_id == "etherium":
-        return etherium.api_price_retrivel(coin_id, currency_value)
-# Upon a successful true statement def retrive_price(Get_Data):
 
 
-def Price_retrivel_other_processes(coin):
-    from model import bitcoin, etherium, litecoin
-    currency_not_needed_void = "void"
-    if coin == "bitcoin":
-        return bitcoin.api_price_retrivel(coin, currency_not_needed_void)
+def handle_cyrpto_price_check(dataTuple):
+    from model import bitcoin,calculator
+    '''Call the model according to the cyrptoCurrency
+       Let the model retrive the price from the api
+       Send that data back to the view
+
+       Needs two things:
+       Cyrptocurrency
+       fiat currency  '''
+    cyrpto_coin, fiat_currency = dataTuple
+    if cyrpto_coin == "btc":
+        print "Retriving your price....."
+        collected_price = bitcoin.api_price_retrivel(dataTuple)
+        return collected_price
 
 
-def Collect_Calculator_Data(Selected_Coin, the_calculator_module, the_calculator_amount):
+
+def handle_cyrpto_rise_calc(dataTuple):
     from model import calculator
-    Get_Current_Currency = Price_retrivel_other_processes(Selected_Coin)
-    if the_calculator_module == "-v":
-        return calculator.calculate_v_mode(Get_Current_Currency, the_calculator_amount)
-    if the_calculator_module == "-inc":
-        return calculator.calculate_inc_mode(Get_Current_Currency, the_calculator_amount)
-    if the_calculator_module == "-dec":
-        return calculator.calculate_dec_mode(Get_Current_Currency, the_calculator_amount)
+    '''Call the model according to the cyrptocurrency '''
+
+    cyrpto, fiat, percentage_to_increase, price = dataTuple
+    CalcFunctionsTuple = (cyrpto, fiat,percentage_to_increase,price)
+    return calculator.calculate_inc_mode(CalcFunctionsTuple)
+
+
+
+def handle_cyrpto_fall_calc(dataTuple):
+    from model import calculator
+    cyrpto, fiat, percentage_to_increase, price = dataTuple
+    CalcFunctionsTuple = (cyrpto, fiat,percentage_to_increase,price)
+    print "Hi"
+    return calculator.calculate_dec_mode(CalcFunctionsTuple)

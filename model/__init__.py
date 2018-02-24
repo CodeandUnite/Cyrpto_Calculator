@@ -1,1 +1,1 @@
-__name__ = ['bitcoin']
+__name__ = ['bitcoin','litecoin','calculator']

@@ -5,7 +5,12 @@
 
 ## Release History
 
- 
+* V1-Alpha-5 
+    * Alpha-5 is still on-going. Bitcoin is only available for this update as we continue to modify the architecture to accomodate those. Updates to the main branch will be everyday so please constantly update your code base. 
+    * Architecture completely refactored but still kept model-view-controller in mind. 
+    * Added testing  with py.test and begun testing all features of the code
+    * Attempted to make the code better to understand.
+    * GUI modified slightly
 * V1-Alpha-4
     * Completely refactored architecture of the code, and we converted it into a model-view-controller framework for ease of use, and better abilities to edit the code
     * Added +/- percentage functionality to the calculator

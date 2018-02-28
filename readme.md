@@ -70,3 +70,6 @@ Step 5. The core maintainers will have a look at your project and attempt to bre
 Step 6. Alternatively, if your enhancement fails, don't be discouraged, we will guide you on how you can improve it and get it accepted the next time! 
 
 
+#Maintainers
+@austinprog - Github -- Message me on reddit for question/how to be an maintainer! username @pyrazolone
+

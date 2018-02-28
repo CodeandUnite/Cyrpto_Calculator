@@ -58,10 +58,15 @@ Cyrpto_Calculator is a simple command line application which is intended to help
 You have made an excellent choice in a project to contribute to! We welcome your contributions. Please have a look at our contribution guideline below to get started.
 ### *Contribution guidelines*
 Step 1. You must ensure that you have your local environment set up accordingly. Furthermore, all that you need to have installed on your machine is Python 2.7, Py.test, and GIT. We heavily recommend sourcetree for beginners. 
+
 Step 2. Once your local environment is set up, you will need to create your own branch of this application on your github profile
+
 Step 3. Have a look at our Issues tab. Here, you will see all the bugs and enchancement requests that we have. Find one you like and comment that you would like to work on it to ensure other developers don't work on it at the same time.
+
 Step 4. Once you are comfortable with your enhancement/bug fix, be sure that you created a test for it on py.test and that it passes.
+
 Step 5. The core maintainers will have a look at your project and attempt to break it by adding more test cases to your test file. If we can't break it and the core maintainers approve it we will add it to the program and have it built into the new build as soon as possible.
+
 Step 6. Alternatively, if your enhancement fails, don't be discouraged, we will guide you on how you can improve it and get it accepted the next time! 
 
 

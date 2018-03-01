@@ -7,6 +7,7 @@ import view
 import controller
 
 
+
 def api_price_retrivel(dataTuple):
     cyrpto, fiat = dataTuple
 
@@ -17,4 +18,4 @@ def api_price_retrivel(dataTuple):
     request = requests.get(url)
     data = request.json()
     bitcoin_price = float(data['ticker']['price'])
-    return bitcoin_price
+    print bitcoin_price

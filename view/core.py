@@ -5,9 +5,6 @@ import sys
 import time
 sys.path.append('../')
 
-#from controller import processor
-#import model
-#import controller
 '''
 MIT License
 
@@ -58,12 +55,9 @@ def input_sanitize_and_check_helper(tupleCheck):
     2 --> This will check the input for --check within the calculator function
     3 --> This will check for --rise and --fall within the calculator function '''
 
-
     from controller import processor
 
     command, cyrpto, fiat, command_code = tupleCheck
-
-
 
     if command_code == 0:
         processorCheckVariables = (cyrpto, fiat)
@@ -98,10 +92,6 @@ def input_sanitize_and_check_helper(tupleCheck):
            return PassFailBoolean
 
 
-
-
-
-
 def help_view():
     print "You have reached the help module"
     print """Welcome to the help module for Cyrpto_Calculator.
@@ -120,7 +110,10 @@ Thank you for using this program """
     else:
         print "Bye Bye"
         sys.exit()
+
 def currency_list_view():
+    '''Displays the current currencies avialable '''
+
     print """
     cyrpto currencies available:
     Bitcoin  ---> btc
@@ -132,7 +125,9 @@ def currency_list_view():
     British Pound        ---> GBP
 
           """
+
 def home_screen_view():
+    default_check_boolean = False
     ''' The home_screen_view is the first view that the user will encounter.
     Here it collects crucial input that the program needs and sends it to the
     destination that the user defines '''
@@ -150,14 +145,17 @@ def home_screen_view():
     collect_initial_input = raw_input("Please enter your input")
     # This try and except will eliminate the value error when user enters only one command
     try:
+        ''' This will attempt to catch command, cyrpto, and fiat. '''
         command, cyrpto, fiat = collect_initial_input.split(" ")
         check_code = 0
     except ValueError:
+        ''' A ValueError occured here and this saves the program from crashing. In this case
+        it is leaving the input alone '''
         collect_initial_input == collect_initial_input
         check_code = 1
 
 
-    default_check_boolean = False
+
 
     if check_code == 0:
         ''' The 0 check code will ensure that the -p command is accurate'''
@@ -179,6 +177,7 @@ def home_screen_view():
             home_screen_view()
 
     if check_code == 1:
+        '''The 1 code will attempt to ensure that --help and --list are sanitized '''
         null_null = "null"
         verifyInfo = (collect_initial_input, default_check_boolean,null_null, check_code)
         # This should return a TRUE or FALSE boolean
@@ -193,11 +192,14 @@ def home_screen_view():
                 print currency_list_view()
                 time.sleep(2)
                 home_screen_view()
-        if booleanJuryDecision == False:
-            '''TO DO
-            1. Need to define what the error it
-            2. Must create a way to mitigate the error for the user '''
-            print "An error occured!"
+        if booleanJuryDecision == False or None:
+            print "We apologize but the data that was sent could not be verified."
+            print "Please make sure that you type your command exactly. If the problem persist please check the --help module"
+            print "Redirecting you to home_screen...."
+            time.sleep(2)
+            print "Loading your data....."
+            time.sleep(2)
+            home_screen_view()
 
 
 
@@ -266,27 +268,25 @@ def calculator_display_view(dataTuple):
             time.sleep(2)
 
 
-
-
-
-
-
-
-def calculator_helper_one(lovely_data):
+def calculator_helper_one(calcData):
     ''' calculator_helper_one will help the calculator process functions for
     --rise and --fall within the calculator'''
-    from model import bitcoin
+    from model import bitcoin,etherium, litecoin
     from controller import processor
-    command, percentage, cyrpto, fiat = lovely_data
+    command, percentage, cyrpto, fiat = calcData
     obtain_price = (cyrpto, fiat)
-    price = bitcoin.api_price_retrivel(obtain_price)
+    if cyrpto == "btc":
+        price = bitcoin.api_price_retrivel(obtain_price)
+    if cyrpto == "ltc":
+        price = litecoin.api_price_retrivel(obtain_price)
+    if cyrpto == "eth":
+        price = etherium.api_price_retrivel(obtain_price)
     verification_code = 3
     default_boolean = False
     PackageDataVerify = (command, percentage, default_boolean, verification_code)
     CleanDataBooleanDecision = input_sanitize_and_check_helper(PackageDataVerify)
 
     if CleanDataBooleanDecision == True:
-
 
         if command == "--rise":
             equationNeededVariables = (cyrpto, fiat, percentage, price)
@@ -298,27 +298,18 @@ def calculator_helper_one(lovely_data):
             equationReturn = processor.handle_cyrpto_rise_calc(equationNeededVariables)
             print equationReturn
 
-def calculator_helper_two(lovely_data):
+def calculator_helper_two(calcData):
     '''
     calculator_helper_two helps the calculator process the price check methods
     for the program
     '''
     from controller import processor
-    user_cyrpto, user_fiat = lovely_data
-    current_price_for_user = processor.handle_cyrpto_price_check(lovely_data)
+    user_cyrpto, user_fiat = calcData
+    current_price_for_user = processor.handle_cyrpto_price_check(calcData)
     data_output = "The current price for %s is %d" % (user_cyrpto, current_price_for_user)
     null_command = "null"
     NeccesaryDataPackage = (null_command, user_cyrpto, user_fiat, data_output)
     calculator_display_view(NeccesaryDataPackage)
-
-
-
-
-
-
-
-
-
 
 
 home_screen_view()

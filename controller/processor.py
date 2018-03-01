@@ -27,7 +27,7 @@ def handle_cyrpto_and_fiat_database_check(dataTuple):
 
 
 def handle_cyrpto_price_check(dataTuple):
-    from model import bitcoin,calculator
+    from model import bitcoin,litecoin,etherium,calculator
     '''Call the model according to the cyrptoCurrency
        Let the model retrive the price from the api
        Send that data back to the view
@@ -40,14 +40,21 @@ def handle_cyrpto_price_check(dataTuple):
         print "Retriving your price....."
         collected_price = bitcoin.api_price_retrivel(dataTuple)
         return collected_price
-
-
+    if cyrpto_coin == "ltc":
+        print "Retriving your price....."
+        collected_price = litecoin.api_price_retrivel(dataTuple)
+        return collected_price
+    if cyrpto_coin == "eth":
+        print "Retriving your price....."
+        collected_price = etherium.api_price_retrivel(dataTuple)
+        return collected_price
 
 def handle_cyrpto_rise_calc(dataTuple):
     from model import calculator
     '''Call the model according to the cyrptocurrency '''
 
     cyrpto, fiat, percentage_to_increase, price = dataTuple
+
     CalcFunctionsTuple = (cyrpto, fiat,percentage_to_increase,price)
     return calculator.calculate_inc_mode(CalcFunctionsTuple)
 
@@ -57,5 +64,5 @@ def handle_cyrpto_fall_calc(dataTuple):
     from model import calculator
     cyrpto, fiat, percentage_to_increase, price = dataTuple
     CalcFunctionsTuple = (cyrpto, fiat,percentage_to_increase,price)
-    print "Hi"
+
     return calculator.calculate_dec_mode(CalcFunctionsTuple)

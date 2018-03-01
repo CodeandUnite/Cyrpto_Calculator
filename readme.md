@@ -26,6 +26,9 @@
     *Added  Etherium functionality
 
 
+## Maintainers
+
+Founder and lead software architect | Austin | austinprog on Github | | Contact method: Reddit @pyrazolone |
 
 # INSTALLATION 
 Requirements
@@ -48,35 +51,27 @@ To run on windows, All you have to do is the following below
 `open terminal`
 `cd 'your directory`
 `python main.py`
-
-### Apple 
-Currently not supported. 
+. 
 
 ## ABOUT
 
-Cyrpto_Calculator is an analysis program that is intended to help you make smart investments in cyrptocurrencies. Currently, our program supports Bitcoin, Litecoin, and Etherium. This command tool can get you the prices for your curriences, and it can also show you how much the coin would be worth if it increased. This tool is still in ALPHA development with features still being added. Suggestions on what to add are helpful and recommended. 
+Cyrpto_Calculator is a simple command line application which is intended to help you make smart investments in cyrptocurrencies. Presently, our program supports Bitcoin, Litecoin, and Etherium. Using this command line tool, you can get the most recent price for your selected currency, and it also shows you exactly how much it would be worth in different currencies. Suggestions on what to add next to the program and gladly accepted. 
 
 ## **CONTRIBUTE**
-Discord Developer chat room: https://discord.gg/mJN9Md
-
-If you would like to contribute than we could definetly use your help. As of now, we are currently in the ALPHA development stage of this software product. Moreover, this means that we have quite a few features that need to be added before this software is released to the public. Below are just some the contributors that we are in need of:
-1. Documentation
-2. Code Testing
-3. Feature development
-4. Leadership oppurtunities
-
-A good first step, regardless of developer skill level, is to check our issues tab on our project issues page. If you find an issue that interests you, we definetly encourage you to work on it. Please, if you ever need help, do not hesitate to contact us on Discord. One of our core developers will be glad to help you. For more experienced developers, we are currently in search of several core developers. These areas are 1. Testing and 2. GUI development. If you are interested, please contact Austin on Discord.
-
+You have made an excellent choice in a project to contribute to! We welcome your contributions. Please have a look at our contribution guideline below to get started.
 ### *Contribution guidelines*
-As a open source software product, it is our mission to make it safe, enjoyable, and functionable by our users. Therefore, we have a few guidelines that we require all contributors to abide by. 
+Step 1. You must ensure that you have your local environment set up accordingly. Furthermore, all that you need to have installed on your machine is Python 2.7, Py.test, and GIT. We heavily recommend sourcetree for beginners. 
 
-1. Write good legible code
-2. Follow the PEP8 style guide
-3. Accept that you may need to rewrite your code several times
-4. Test your code by making simple unit tests
+Step 2. Once your local environment is set up, you will need to create your own branch of this application on your github profile
 
-We recommend using a linter to ensure your code is PEP8 compliant. In addition, please read up on https://docs.python.org/2/library/unittest.html if you are new to testing. We've been relaxed on testing for ALPHA. However, it is now a requirement. 
+Step 3. Have a look at our Issues tab. Here, you will see all the bugs and enchancement requests that we have. Find one you like and comment that you would like to work on it to ensure other developers don't work on it at the same time.
 
-### *Beginner contributions ideas*
-  If you new to programming, we might suggest that you consider helping us in adding new cyrpto_currencies.
-  To do this, you will need to reference our API cyrptonator at https://www.cryptonator.com/api. In addition, you will need to have       some experience with JSON. *More details coming soon*
+Step 4. Once you are comfortable with your enhancement/bug fix, be sure that you created a test for it on py.test and that it passes.
+
+Step 5. The core maintainers will have a look at your project and attempt to break it by adding more test cases to your test file. If we can't break it and the core maintainers approve it we will add it to the program and have it built into the new build as soon as possible.
+
+Step 6. Alternatively, if your enhancement fails, don't be discouraged, we will guide you on how you can improve it and get it accepted the next time! 
+
+
+
+

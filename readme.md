@@ -5,6 +5,11 @@
 
 ## Release History
 
+* Maintance Mode
+   * This project is now in maintance mode as the maintainer has decided to pursue other projects.
+   * You can make this project active at anytime by sending in pull-requests or asking to be the maintainer
+   * The code maintainer will look at all pull-requests within a timely manner(email doawriting@gmail.com if he does not) 
+
 * V1-Alpha-5 
     * Architecture completely refactored but still kept model-view-controller in mind. 
     * Added testing  with py.test and begun testing all features of the code

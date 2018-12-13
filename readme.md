@@ -8,7 +8,7 @@
 * Maintance Mode
    * This project is now in maintance mode as the maintainer has decided to pursue other projects.
    * You can make this project active at anytime by sending in pull-requests or asking to be the maintainer
-   * The code maintainer will look at all pull-requests within a timely manner(email doawriting@gmail.com if he does not) 
+   * The code maintainer will look at all pull-requests within a timely manner(Kindly send message to @pyrazolone on Reddit if he does not do anything with the pull-requests. He is a full-time student and might not look at his emails or github that often) 
 
 * V1-Alpha-5 
     * Architecture completely refactored but still kept model-view-controller in mind. 

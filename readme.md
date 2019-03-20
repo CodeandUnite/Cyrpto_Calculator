@@ -1,5 +1,6 @@
 ![alt text](https://raw.githubusercontent.com/CodeandUnite/Cyrpto_Calculator/V01-Alpha-2/logo.png)
 # **Welcome to Cyrpto-Calculator**
+## **Kindly note that this program will only run on Python 2.7**
 [![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
 
 
@@ -8,7 +9,8 @@
 * Maintance Mode
    * This project is now in maintance mode as the maintainer has decided to pursue other projects.
    * You can make this project active at anytime by sending in pull-requests or asking to be the maintainer
-   * The code maintainer will look at all pull-requests within a timely manner(Kindly send message to @pyrazolone on Reddit if he does not do anything with the pull-requests. He is a full-time student and might not look at his emails or github that often) 
+   * The code maintainer will look at all pull-requests within a timely manner(Kindly send message to @pyrazolone on Reddit if he does not do anything with the pull-requests. He is a full-time student and might not look at his emails or github that often)
+   
 
 * V1-Alpha-5 
     * Architecture completely refactored but still kept model-view-controller in mind. 

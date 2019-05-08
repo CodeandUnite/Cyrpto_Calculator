@@ -8,6 +8,7 @@
   * End of life for the desktop version. 
   * Final refactor
   * Final Documment update
+  
 *V1.1
   * Port from 2.7 to 3.7 (ironic) due to end of life of Python 2.7
   * Due to maintainers other projects this could take awhile but expected before 2020

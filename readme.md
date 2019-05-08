@@ -3,14 +3,15 @@
 ## **Kindly note that this program will only run on Python 2.7**
 [![Build Status](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator.svg?branch=master)](https://travis-ci.org/CodeandUnite/Cyrpto_Calculator)
 
-
+## Upcoming
+*V1.1.Maintance
+  * End of life for the desktop version. 
+  * Final refactor
+  * Final Documment update
+*V1.1
+  * Port from 2.7 to 3.7 (ironic) due to end of life of Python 2.7
+  * Due to maintainers other projects this could take awhile but expected before 2020
 ## Release History
-
-* Maintance Mode
-   * This project is now in maintance mode as the maintainer has decided to pursue other projects.
-   * You can make this project active at anytime by sending in pull-requests or asking to be the maintainer
-   * The code maintainer will look at all pull-requests within a timely manner(Kindly send message to @pyrazolone on Reddit if he does not do anything with the pull-requests. He is a full-time student and might not look at his emails or github that often)
-   
 
 * V1-Alpha-5 
     * Architecture completely refactored but still kept model-view-controller in mind. 

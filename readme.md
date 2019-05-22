@@ -1,3 +1,6 @@
+#CodeAndUnite Foundation no longer supports this software in-order to focus on new ideas. Therefore, no new PRs will be accepted on THIS fork. Alternatively, you can fork this project and work on it on your own. We appreciate everyones work on this project. 
+
+
 ![alt text](https://raw.githubusercontent.com/CodeandUnite/Cyrpto_Calculator/V01-Alpha-2/logo.png)
 # **Welcome to Cyrpto-Calculator**
 ## **Kindly note that this program will only run on Python 2.7**
